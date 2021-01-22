@@ -67,7 +67,6 @@ html {
   place-items: center;
   color: white;
   font-size: 2rem;
-  border: 1px solid red;
 }
 
 .cube-1 .top {
@@ -93,8 +92,8 @@ html {
 }
 
 .cube-3d {
-  width: 10rem;
-  height: 10rem;
+  width: 100%;
+  height: 500px;
   -webkit-perspective: 600px;
           perspective: 600px;
   position: relative;
@@ -119,8 +118,6 @@ html {
 .cube-2 .boxed {
   width: 10rem;
   height: 10rem;
-  width: 10rem;
-  height: 10rem;
   position: absolute;
   display: -ms-grid;
   display: grid;
@@ -131,39 +128,39 @@ html {
 }
 
 .cube-2 .one {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   -webkit-transform: rotateY(0deg) translateZ(70px);
           transform: rotateY(0deg) translateZ(70px);
 }
 
 .cube-2 .two {
-  background: rgba(255, 0, 0, 0.5);
-  -webkit-transform: rotateY(91deg) translateZ(77px);
-          transform: rotateY(91deg) translateZ(77px);
+  background: rgba(255, 0, 0, 0.8);
+  -webkit-transform: rotateY(90deg) translateZ(81px);
+          transform: rotateY(90deg) translateZ(81px);
 }
 
-.cube-2 .three {
-  background: rgba(0, 128, 0, 0.5);
+.three {
+  background: rgba(0, 128, 0, 0.8);
   -webkit-transform: rotateY(180deg) translateZ(100px);
           transform: rotateY(180deg) translateZ(100px);
   -webkit-transform: rotateY(180deg) translateZ(97px);
           transform: rotateY(180deg) translateZ(97px);
 }
 
-.cube-2 .four {
+.four {
   background-color: rgba(188, 143, 143, 0.5);
-  -webkit-transform: rotateY(-92deg) translateZ(80px);
-          transform: rotateY(-92deg) translateZ(80px);
+  -webkit-transform: rotateY(-92deg) translateZ(75px);
+          transform: rotateY(-92deg) translateZ(75px);
 }
 
-.cube-2 .five {
-  background-color: rgba(255, 255, 0, 0.5);
+.five {
+  background-color: rgba(255, 255, 0, 0.8);
   -webkit-transform: rotateX(90deg) translateZ(80px);
           transform: rotateX(90deg) translateZ(80px);
 }
 
-.cube-2 .six {
-  background: rgba(65, 105, 225, 0.5);
+.six {
+  background: rgba(65, 105, 225, 0.8);
   -webkit-transform: rotateX(-90deg) translateZ(80px);
           transform: rotateX(-90deg) translateZ(80px);
 }
@@ -175,12 +172,16 @@ html {
   }
   50% {
     left: 100px;
-    -webkit-transform: rotate(-180deg) translateY(100px);
-            transform: rotate(-180deg) translateY(100px);
+    -webkit-transform: rotate(-180deg) translateX(500px);
+            transform: rotate(-180deg) translateX(500px);
   }
   100% {
     -webkit-transform: rotateY(360deg);
             transform: rotateY(360deg);
   }
+}
+
+h1 {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
