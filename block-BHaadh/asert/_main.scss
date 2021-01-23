@@ -8,6 +8,11 @@
 }
 .d2{
     width: 100%;
+    &:hover{
+        animation-name: type;
+        animation:  2s;
+    }
+    
 }
 
 .cube-1{
@@ -15,19 +20,7 @@
     width: 10rem;
     height: 10rem;
     margin-top: 10rem;
-    &:hover{
-        animation-name: animation;
-        animation:  2s;
-    }
-    @keyframes animation {
-        0% {
-          transform: rotateY(0deg);
-        }
-        100% {
-          transform: rotateY(360deg);
-        }
-      }
-    
+
     .box{
         width: 10rem;
         height: 10rem;
@@ -42,14 +35,23 @@
         transform: rotate(-45deg) skew(15deg, 15deg)
     }
     .left{
-        background-color: green;
+        background-color: red;
         transform: rotate(23deg) skew(20deg, 7deg) translate(-48%, 97%);
     }
     .front{
-        background-color: green;
+        background-color: yellow;
         transform: rotate(-20deg) skew(-24deg, -9deg) translate(53%, 97%);
 
     }
+    @keyframes type {
+        0% {
+          transform: rotateY(0deg) translate(10%);
+        }
+        100% {
+          transform: rotateY(180deg) translate(20%);
+        }
+      }
+    
 }
 
 .d3{
@@ -71,9 +73,6 @@
     position: relative;
     margin-top: 10rem;
     transform-style: preserve-3d;
-    &:hover{
-        
-    }
     .boxed{
         width: 10rem;
         height: 10rem;
@@ -122,7 +121,7 @@
             transform: rotate(-180deg) translateX(500px);
         }
         100% {
-            transform: rotateY(360deg);
+            transform: rotateY(360deg) ;
         }
           
     }

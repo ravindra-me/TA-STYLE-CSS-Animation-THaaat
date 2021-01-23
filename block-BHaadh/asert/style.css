@@ -22,40 +22,18 @@ html {
   width: 100%;
 }
 
+.d2:hover {
+  -webkit-animation-name: type;
+          animation-name: type;
+  -webkit-animation: 2s;
+          animation: 2s;
+}
+
 .cube-1 {
   position: relative;
   width: 10rem;
   height: 10rem;
   margin-top: 10rem;
-}
-
-.cube-1:hover {
-  -webkit-animation-name: animation;
-          animation-name: animation;
-  -webkit-animation: 2s;
-          animation: 2s;
-}
-
-@-webkit-keyframes animation {
-  0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@keyframes animation {
-  0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
 }
 
 .cube-1 .box {
@@ -76,15 +54,37 @@ html {
 }
 
 .cube-1 .left {
-  background-color: green;
+  background-color: red;
   -webkit-transform: rotate(23deg) skew(20deg, 7deg) translate(-48%, 97%);
           transform: rotate(23deg) skew(20deg, 7deg) translate(-48%, 97%);
 }
 
 .cube-1 .front {
-  background-color: green;
+  background-color: yellow;
   -webkit-transform: rotate(-20deg) skew(-24deg, -9deg) translate(53%, 97%);
           transform: rotate(-20deg) skew(-24deg, -9deg) translate(53%, 97%);
+}
+
+@-webkit-keyframes type {
+  0% {
+    -webkit-transform: rotateY(0deg) translate(10%);
+            transform: rotateY(0deg) translate(10%);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg) translate(20%);
+            transform: rotateY(180deg) translate(20%);
+  }
+}
+
+@keyframes type {
+  0% {
+    -webkit-transform: rotateY(0deg) translate(10%);
+            transform: rotateY(0deg) translate(10%);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg) translate(20%);
+            transform: rotateY(180deg) translate(20%);
+  }
 }
 
 .d3 {
@@ -163,6 +163,22 @@ html {
   background: rgba(65, 105, 225, 0.8);
   -webkit-transform: rotateX(-90deg) translateZ(80px);
           transform: rotateX(-90deg) translateZ(80px);
+}
+
+@-webkit-keyframes animation {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    left: 100px;
+    -webkit-transform: rotate(-180deg) translateX(500px);
+            transform: rotate(-180deg) translateX(500px);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
 }
 
 @keyframes animation {
